@@ -1,0 +1,21 @@
+{
+  "name": "pananames-e2e",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright end-to-end tests for Pananames dev environment",
+  "scripts": {
+    "test": "playwright test",
+    "test:contacts": "playwright test tests/contacts",
+    "test:domains": "playwright test tests/domains",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^22.18.1",
+    "dotenv": "17.2.2",
+    "typescript": "5.9.2"
+  }
+}
